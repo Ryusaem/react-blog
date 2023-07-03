@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-const Create = () => {
+const Create = ({ addBlog }) => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("mario");
@@ -10,22 +10,12 @@ const Create = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const blog = { title, body, author };
+    const blog = { title, body, author, id: Math.floor(Math.random() * 10000) }; // Random id for the example
 
     setIsPending(true);
-
-    fetch("http://localhost:8000/blogs", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(blog),
-    }).then(() => {
-      //   console.log("new blog added");
-      setIsPending(false);
-      //   history.go(-1);
-      history.push("/");
-    });
+    addBlog(blog);
+    setIsPending(false);
+    history.push("/");
   };
 
   return (

@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Create from "./Create";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import BlogDetails from "./BlogDetail";
 import NotFound from "./NotFound";
 import { useState } from "react";
@@ -28,7 +28,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Navbar />
         <div className="content">

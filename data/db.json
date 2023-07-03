@@ -13,55 +13,10 @@
       "id": 2
     },
     {
-      "id": 3
-    },
-    {
-      "id": 4
-    },
-    {
-      "title": "rstsrt",
-      "body": "srtrst",
-      "author": "mario",
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
       "title": "New Test with all thing corrected",
       "body": "let's see if everything is okay",
       "author": "yoshi",
       "id": 7
-    },
-    {
-      "title": "srtsrtrs",
-      "body": "srtrst",
-      "author": "mario",
-      "id": 8
-    },
-    {
-      "title": "rstrst",
-      "body": "zzzzz",
-      "author": "yoshi",
-      "id": 9
-    },
-    {
-      "title": "tsrt",
-      "body": "rstrs",
-      "author": "mario",
-      "id": 10
-    },
-    {
-      "title": "tsr",
-      "body": "srtr",
-      "author": "mario",
-      "id": 11
-    },
-    {
-      "title": "rstrs",
-      "body": "rstrst",
-      "author": "yoshi",
-      "id": 12
     }
   ]
 }
